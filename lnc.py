@@ -138,7 +138,7 @@ class MI:
 		#Second Step: Add the correction term (Local Non-Uniform Correction)
 		e = 0.
 		tot = -1;
-  		for point in points:
+		for point in points:
 			tot += 1;
 			#Find k-nearest neighbors in joint space, p=inf means max norm
 			knn = tree.query(point,k+1,p=float('inf'));
